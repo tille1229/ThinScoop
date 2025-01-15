@@ -1,0 +1,16 @@
+{
+	"homepage": "http://flypy.ysepan.com/",
+	"description": "小鹤音形输入法",
+		"version": "10.11.4",
+		"license": "Apache-2.0",
+		"architecture": {
+			"64bit": {
+				"url": "http://ys-g.ysepan.com/wap/flypy/Lie7A1UDAlDhd8A74k/zdahD9jralDF1UbbAt3MgfB3HW25fa/flypy_Setup_10.11.4.exe#/flypy_setup.exe",
+				"hash": "md5:5ad8f2e672bfea10c8656722fd290318"
+			}
+		},
+
+		"pre_install": [
+			"if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }"
+		]
+}
