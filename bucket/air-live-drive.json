@@ -1,0 +1,28 @@
+{
+	"homepage": "https://www.airlivedrive.com/en/",
+	"description": "Add your clouds as disk drives to your computer",
+	"version": "2.5.0",
+	"license": "Apache-2.0",
+	"architecture": {
+		"64bit": {
+			"url": "https://www.airlivedrive.com/downloads/AirLiveDrive-OfflineInstaller.exe#/setup.exe",
+			"hash": "md5:0ca7145698da0e5836fb015ee349df1b"
+		}
+	},
+
+
+	"pre_install": [
+		"if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
+		"Start-Process -Wait \"$dir\\setup.exe\" -ArgumentList @('/S', \"/D=$dir\") -Verb RunAs | Out-Null",
+		"Remove-Item \"$dir\\setup.exe\""
+	],
+	"pre_uninstall": [
+		"if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
+		"Start-Process -Wait \"$dir\\uninst.exe\" -ArgumentList @('/S', \"/D=$dir\") -Verb RunAs | Out-Null"
+	],
+	"bin":"AirLiveDrive.exe",
+    "persist": [
+        "AirLiveDrive.exe.config"
+    ]
+
+}

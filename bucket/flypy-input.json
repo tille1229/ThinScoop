@@ -1,0 +1,17 @@
+{
+	"homepage": "http://flypy.ysepan.com/",
+	"description": "小鹤音形输入法",
+		"version": "10.11.4",
+		"license": "Apache-2.0",
+		"architecture": {
+			"64bit": {
+				"url": "https://59-47-225-58.pd1.cjjd19.com:30443/download-cdn.cjjd19.com/123-792/5ad8f2e6/1815256659-0/5ad8f2e672bfea10c8656722fd290318/c-m60?v=5&t=1737023360&s=1737023360662e2c897f8aa33b04e6cadd9eae9c10&r=WA06B7&bzc=2&bzs=313831353235363635393a32393834393939383a31313435323438393a30&filename=flypy_Setup_10.11.4.exe&x-mf-biz-cid=ebac649e-3569-4101-97e6-bc9ce76ddbed-584000&cache_type=1&xmfcid=7790654e-9e0c-410f-a5c3-d9947ffb320d-1-abf611255#/setup.exe",
+				"hash": "md5:5ad8f2e672bfea10c8656722fd290318"
+			}
+		},
+		"pre_install": [
+			"if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
+			"Start-Process -Wait \"$dir\\setup.exe\" -ArgumentList @('/S', \"/D=$dir\") -Verb RunAs | Out-Null",
+			"Remove-Item \"$dir\\setup.exe\""
+		]
+}
