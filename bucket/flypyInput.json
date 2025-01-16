@@ -11,7 +11,7 @@
 		},
 		"pre_install": [
 			"if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
-			"Start-Process -Wait \"$dir\\setup.exe\" -ArgumentList @('/S', \"/D=$dir\") -Verb RunAs | Out-Null",
+			"Start-Process -Wait \"$dir\\setup.exe\" -ArgumentList @(\"/D=$dir\") -Verb RunAs | Out-Null",
 			"Remove-Item \"$dir\\setup.exe\""
 		]
 }
