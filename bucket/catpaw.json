@@ -1,0 +1,31 @@
+{
+    "homepage": "https://github.com/CatPawApp/CatPawOpen",
+    "description": "window 版本猫影视",
+    "version": "2.0.3_beta4",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/CatPawApp/CatPawOpen/releases/download/beta/windows_release_open_2.0.3_beta4.7z",
+            "hash": "md5:dbccfe8d736ce0417e215bbe5c97b0d8",
+            "extract_dir": "Release"
+        }
+    },
+    "bin": "catpaw.exe",
+    "shortcuts": [
+        [
+            "catpaw.exe",
+            "CatPaw"
+        ]
+    ],
+    "persist": [
+        "data/flutter_assets/asset/js"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/CatPawApp/CatPawOpen/releases/download/beta/windows_release_open_$version.7z"
+            }
+        }
+    }
+}
