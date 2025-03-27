@@ -1,12 +1,12 @@
 {
 	"homepage": "https://www.airlivedrive.com/en/",
 	"description": "Add your clouds as disk drives to your computer",
-	"version": "2.5.0",
+	"version": "2.6.0",
 	"license": "Apache-2.0",
 	"architecture": {
 		"64bit": {
 			"url": "https://www.airlivedrive.com/downloads/AirLiveDrive-OfflineInstaller.exe#/setup.exe",
-			"hash": "md5:0ca7145698da0e5836fb015ee349df1b"
+			"hash": "md5:c46d728a681d2f619b7ba50c41bc5374"
 		}
 	},
 
