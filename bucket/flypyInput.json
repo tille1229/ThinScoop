@@ -1,12 +1,12 @@
 {
 	"homepage": "http://flypy.ysepan.com/",
 	"description": "小鹤音形输入法",
-		"version": "10.13.3",
+		"version": "10.13.11.2511",
 		"license": "Apache-2.0",
 		"architecture": {
 			"64bit": {
-				"url": "http://ys-d.ysepan.com/wap/flypy/7lf7b2RliBe9dAd/9d6gT7kraHDi2QbAogB5gFb2jbAle/FlyPY_Setup_10.13.2.2506.exe#/setup.exe",
-				"hash": "md5:52cbf5598c1fea3857af29fcc7238202"
+				"url": "http://ys-c.ysepan.com/wap/flypy/7lf7b2RliBe6FAB/Bd6hC7KrakTg6aBcogB5DIF8hbAle/FlyPY_Setup_10.13.11.2511.exe#/setup.exe",
+				"hash": "md5:072382ca17b8620ec9c3c5e2e514dd50"
 			}
 		},
 		"pre_install": [
